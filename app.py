@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def homepage():
-  return "<p>My first website with Flask</p>"
+  return render_template('home.html')
 
 
 if __name__ == "__main__":
