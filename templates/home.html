@@ -4,60 +4,40 @@
     <title>
       Flask Playground 
     </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-      h1 {
-        
-        color: rgb(25,25,25);
-        font-size: 48px;
-        font-weight:bold;
-        text-align: center;
-        font-family: Cursive;
-      }
       #banner{
+        height: 360px;
+        object-fit:cover;
         width: 100%;
-        height: 368px;
-        object-fit: cover;
-      }
-      h2 {
-        font-family: Cursive;
-        font-size: 32px;
-        color: rgb(25,25,25);
-
-      }
-      .bodytext {
-        font-family: Calibri;
-        color: rgb(50,50,50);
-      }
-
-      #container {
-        max-width: 720px;
-        margin: 0 auto 0 auto;
       }
     </style>
   </head>
   <body>
-    <div id="container">
-      <h1>Flask Playground</h1>
-      <h4>by: thnc-7176</h4>
-      <img id="banner" src="https://first-flask-website--thiagonaves2.repl.co/static/playground_home.jpg" height="320">
-      <h5>
+    <div class="container">
+      <h1 class="mt-2">Flask Playground</h1>
+      <h5 class="mb-4">by: thnc-7176</h5>
+      <img class="img-fluid" id="banner" src="https://first-flask-website--thiagonaves2.repl.co/static/playground_home.jpg" height="320">
+      <h5 class="mb-4">
         Photo by <a href="https://unsplash.com/@nicosmit99?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nico Smit</a> on <a href="https://unsplash.com/photos/green-and-blue-animal-cartoon-character-eMFw6fSF7sM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       </h5>
       <h2>
         About Flask Playground
       </h2>
-      <p class="bodytext">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <p>
+        This is the Flask Playground: a place where many small beginner's ideas are joined as webpages just for fun.
       </p>
       <h2>
         Projects
       </h2>
 
-      <button>Carrers Page</button>
-      <button>Brazilian Streets (CEP)</button>
-      <button>Currency Cotations</button>
-      <button>Country & Flags</button>
-      <p>
+      <button class="btn btn-primary mt-4" onclick="location.href = '/carrers-homepage';">Carrers Page</button>
+      <button class="btn btn-success mt-4">Brazilian Streets (CEP)</button>
+      <button class="btn btn-danger mt-4">Currency Cotations</button>
+      <button class="btn btn-warning mt-4">Country & Flags</button>
+      <p class="mt-5">
         Copyright 2023, thnc-7176
       </p>
     </div>

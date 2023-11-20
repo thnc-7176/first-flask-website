@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Carrers-Homepage 
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      #banner{
+        height: 360px;
+        object-fit:cover;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-2">Job Announcements</h1>
+      <h5 class="mb-4">by: thnc-7176</h5>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+        
+      </div>
+      <button class="btn btn-warning mt-4" onclick="location.href = '/';">Return</button>
+      <p class="mt-5">
+        Copyright 2023, thnc-7176
+      </p>
+    </div>
+  </body>
+</html>
