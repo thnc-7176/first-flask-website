@@ -30,7 +30,7 @@ jobs_list = [
     'id': 3,
     'title': 'Back-End Engineer',
     'location': 'New York, USA',
-    'salary': '$ 4.000,00'
+    'salary': '$ 5.000,00'
   },
 ]
 
