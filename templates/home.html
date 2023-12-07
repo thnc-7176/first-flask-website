@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      Flask Playground 
+      Homepage
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +16,7 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class="container">
       <h1 class="mt-2">Flask Playground</h1>
       <h5 class="mb-4">by: thnc-7176</h5>
@@ -37,9 +38,12 @@
       <button class="btn btn-success mt-4">Brazilian Streets (CEP)</button>
       <button class="btn btn-danger mt-4">Currency Cotations</button>
       <button class="btn btn-warning mt-4">Country & Flags</button>
+      <!--
       <p class="mt-5">
         Copyright 2023, thnc-7176
       </p>
+      -->
     </div>
+    {% include 'footer.html'%}
   </body>
 </html>
